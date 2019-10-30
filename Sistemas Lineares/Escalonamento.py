@@ -17,8 +17,3 @@ def trian_inf(M):
       mul=M[i-1,j]/pivo
       M[i-1,:]=M[i-1,:]-M[j,:]*mul
   return M
-
-A=np.array([[1,2,1,12],[1,-3,5,1],[2,-1,3,10]], dtype=float)
-
-print(trian_sup(A))
-print(trian_inf(A))
